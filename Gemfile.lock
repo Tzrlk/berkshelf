@@ -72,6 +72,7 @@ GEM
       ffi (~> 1.9.10)
       rspec-expectations (>= 2.99)
       thor (~> 0.19)
+    ast (2.3.0)
     axiom-types (0.1.1)
       descendants_tracker (~> 0.0.4)
       ice_nine (~> 0.11.0)
@@ -94,17 +95,19 @@ GEM
     celluloid-io (0.16.2)
       celluloid (>= 0.16.0)
       nio4r (>= 1.1.0)
-    chef-config (12.17.44)
+    chef-config (12.18.31)
       addressable
       fuzzyurl
       mixlib-config (~> 2.0)
       mixlib-shellout (~> 2.0)
-    chef-zero (5.1.1)
+    chef-zero (5.2.0)
       ffi-yajl (~> 2.2)
       hashie (>= 2.0, < 4.0)
       mixlib-log (~> 1.3)
       rack (~> 2.0)
       uuidtools (~> 2.1)
+    chefstyle (0.4.0)
+      rubocop (= 0.45.0)
     childprocess (0.5.9)
       ffi (~> 1.0, >= 1.0.11)
     cleanroom (1.0.0)
@@ -218,7 +221,7 @@ GEM
     mixlib-authentication (1.4.1)
       mixlib-log
     mixlib-config (2.2.4)
-    mixlib-install (2.1.9)
+    mixlib-install (2.1.10)
       artifactory
       mixlib-shellout
       mixlib-versioning
@@ -248,6 +251,9 @@ GEM
       shellany (~> 0.0)
     octokit (4.6.2)
       sawyer (~> 0.8.0, >= 0.5.3)
+    parser (2.3.3.1)
+      ast (~> 2.2)
+    powerpack (0.1.1)
     pry (0.10.4)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -300,6 +306,12 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.5.0)
     rspec-support (3.5.0)
+    rubocop (0.45.0)
+      parser (>= 2.3.1.1, < 3.0)
+      powerpack (~> 0.1)
+      rainbow (>= 1.99.1, < 3.0)
+      ruby-progressbar (~> 1.7)
+      unicode-display_width (~> 1.0, >= 1.0.1)
     ruby-progressbar (1.8.1)
     ruby_dep (1.5.0)
     safe_yaml (1.0.4)
@@ -331,6 +343,7 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.2)
+    unicode-display_width (1.1.3)
     unicode_utils (1.4.0)
     uuidtools (2.1.5)
     varia_model (0.6.0)
@@ -359,6 +372,7 @@ DEPENDENCIES
   berkshelf!
   berkshelf-api!
   chef-zero (>= 4.0)
+  chefstyle
   coolline
   dep_selector (>= 1.0)
   fuubar (>= 2.0)
